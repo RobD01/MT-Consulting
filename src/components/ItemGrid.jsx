@@ -13,12 +13,14 @@ const ItemGrid = (props) => {
         <Row>
           {props.list.map((item) => (
             <Col key={item} xs={12} md={4}>
-              <LazyLoadImage
-                src={item[0]}
-                alt={item}
-                className="gridImage"
-                effect="blur"
-              />
+              <a href={item[2]} target="_blank" rel="noreferrer">
+                <LazyLoadImage
+                  src={item[0]}
+                  alt={item}
+                  className="gridImage"
+                  effect="blur"
+                />
+              </a>
               <p className="gridText">{item[1]}</p>
             </Col>
           ))}

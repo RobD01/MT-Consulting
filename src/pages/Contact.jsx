@@ -1,25 +1,11 @@
 import React from "react";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "../components/Navbar";
-
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
 import SocialLink from "../components/SocialLink";
 
 const Contact = () => {
-  const socialLink = [
-    [
-      "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
-      "https://www.youtube.com/watch?v=aWIRSRMmdN0",
-    ],
-    [
-      "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png",
-      "https://www.instagram.com/xuanloanfabrics/",
-    ],
-  ];
-
   return (
     <div className="container text-center">
       <Navigation />

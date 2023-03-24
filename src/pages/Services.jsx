@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "../components/Navbar";
 import ItemGrid from "../components/ItemGrid";
