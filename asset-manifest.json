@@ -1,18 +1,16 @@
 {
   "files": {
     "main.css": "/MT-Consulting/static/css/main.dc87a238.css",
-    "main.js": "/MT-Consulting/static/js/main.ca5051d3.js",
+    "main.js": "/MT-Consulting/static/js/main.38fa70cc.js",
     "static/js/787.8316af2a.chunk.js": "/MT-Consulting/static/js/787.8316af2a.chunk.js",
-    "static/media/5.jpg": "/MT-Consulting/static/media/5.8c990a9a6d96a5d1e22b.jpg",
-    "static/media/3.jpg": "/MT-Consulting/static/media/3.0b516686fce0c4391167.jpg",
-    "static/media/7.jpg": "/MT-Consulting/static/media/7.344584c39922a716ed1c.jpg",
+    "static/media/viewContractLogo.jpg": "/MT-Consulting/static/media/viewContractLogo.c91772cf746f21a6227b.jpg",
     "index.html": "/MT-Consulting/index.html",
     "main.dc87a238.css.map": "/MT-Consulting/static/css/main.dc87a238.css.map",
-    "main.ca5051d3.js.map": "/MT-Consulting/static/js/main.ca5051d3.js.map",
+    "main.38fa70cc.js.map": "/MT-Consulting/static/js/main.38fa70cc.js.map",
     "787.8316af2a.chunk.js.map": "/MT-Consulting/static/js/787.8316af2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc87a238.css",
-    "static/js/main.ca5051d3.js"
+    "static/js/main.38fa70cc.js"
   ]
 }
