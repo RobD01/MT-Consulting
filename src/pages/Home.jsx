@@ -39,12 +39,17 @@ const client = [
   ],
   [
     contractLogo,
-    `Please see sample service agreement above for details on the terms.`,
+    `Click on the image above to view the sample agreement.`,
     "https://drive.google.com/file/d/1XTpEpe0ndEheEzeXIweB6alvlnoBlF7_/view?usp=sharing",
   ],
   [
     "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    `We are also trained real estate agents. We can guide you in your journey to buy or sell your home`,
+    `We are also trained real estate agents. We can 
+    guide you in your journey to buy or sell your home.
+    General consultaion (not your formal real estate agent) 
+    is by the hourly fee. As the formal real estate agent fee, 
+    the commission fee is 6% of sales price
+    `,
   ],
 ];
 
