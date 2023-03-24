@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/MT-Consulting/static/css/main.dc87a238.css",
-    "main.js": "/MT-Consulting/static/js/main.8658331f.js",
+    "main.js": "/MT-Consulting/static/js/main.ca5051d3.js",
     "static/js/787.8316af2a.chunk.js": "/MT-Consulting/static/js/787.8316af2a.chunk.js",
     "static/media/5.jpg": "/MT-Consulting/static/media/5.8c990a9a6d96a5d1e22b.jpg",
     "static/media/3.jpg": "/MT-Consulting/static/media/3.0b516686fce0c4391167.jpg",
     "static/media/7.jpg": "/MT-Consulting/static/media/7.344584c39922a716ed1c.jpg",
     "index.html": "/MT-Consulting/index.html",
     "main.dc87a238.css.map": "/MT-Consulting/static/css/main.dc87a238.css.map",
-    "main.8658331f.js.map": "/MT-Consulting/static/js/main.8658331f.js.map",
+    "main.ca5051d3.js.map": "/MT-Consulting/static/js/main.ca5051d3.js.map",
     "787.8316af2a.chunk.js.map": "/MT-Consulting/static/js/787.8316af2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc87a238.css",
-    "static/js/main.8658331f.js"
+    "static/js/main.ca5051d3.js"
   ]
 }
