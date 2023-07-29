@@ -73,3 +73,26 @@ export const business = [
     Patreon. See Social Media links below.`,
   },
 ];
+
+export const realEstate = [
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "General Consultaion",
+    text: `General consultaion (not acting as your formal 
+      real estate agent) is by the hourly fee.
+      Consultation includes: Budget planning, Return on
+      Investment, Cash Flow, Interest rate & Economic Analysis`,
+  },
+
+  {
+    id: 2,
+    image:
+      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Agent",
+    text: `As the Seller's agent, the commission fee is 
+    6% of sales price. As the Buyer's agent, there is
+    no cost to the Buyer`,
+  },
+];

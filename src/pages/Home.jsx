@@ -55,6 +55,7 @@ const Home = () => {
       {/* Grid 1, images */}
       <ItemGrid list={coach} title="Financial Coaching" />
       <ItemGrid list={business} title="Business & Marketing Solutions" />
+      <ItemGrid list={business} title="Real Estate Consultation" />
     </div>
   );
 };
