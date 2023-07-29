@@ -9,19 +9,22 @@ const ItemGrid = (props) => {
   return (
     <>
       <h4 className="text-center mt-5">{props.title}</h4>
-      <Container fluid="md" className="my-1">
+      <Container fluid="md" className="mt-4">
         <Row>
           {props.list.map((item) => (
-            <Col key={item} xs={12} md={4}>
-              <a href={item[2]} target="_blank" rel="noreferrer">
-                <LazyLoadImage
-                  src={item[0]}
-                  alt={item}
-                  className="gridImage"
-                  effect="blur"
-                />
-              </a>
-              <p className="gridText">{item[1]}</p>
+            <Col key={item.id} xs={12} md={6} lg={4}>
+              <LazyLoadImage
+                src={item.image}
+                alt={item.id}
+                className="gridImage"
+                effect="blur"
+              />
+              <div className="gridText">
+                <p>
+                  <b>{item.title}</b>
+                </p>
+                <p>{item.text}</p>
+              </div>
             </Col>
           ))}
         </Row>

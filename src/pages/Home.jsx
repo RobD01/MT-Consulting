@@ -1,75 +1,58 @@
-import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import "../style/font.css";
 import "../style/main.css";
-import Navigation from "../components/Navbar";
 import ItemGrid from "../components/ItemGrid";
-import SocialLink from "../components/SocialLink";
-import contractLogo from "../images/viewContractLogo.jpg";
-
-// Grid
-
-// Images
-const services = [
-  [
-    "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600",
-    `MISSION: developing and implementing strategies to 
-    strengthen your online footprint. Your customer's attention
-    is a scarce resouce, and we can help you gain market share.`,
-  ],
-  [
-    "https://images.pexels.com/photos/167832/pexels-photo-167832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    `SERVICES: Photography, videography, web development, 
-    business strategies, budgeting, and cash flow analysis.`,
-  ],
-  [
-    "https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    `We provide complimentary finance and business lectures 
-    on the Youtube channel and Patreon. See Social Media links
-    below. `,
-  ],
-];
-
-const client = [
-  [
-    "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    `FEE: Our services are on a flat hourly fee of $ 50.00.
-    The amount billed will be deducted from the Retainer Deposit
-    of $ 1,000.00. Any amount remaining from the conclusion
-    of our services will be refunded to the client.`,
-  ],
-  [
-    contractLogo,
-    `Click on the image above to view the sample agreement.`,
-    "https://drive.google.com/file/d/1XTpEpe0ndEheEzeXIweB6alvlnoBlF7_/view?usp=sharing",
-  ],
-  [
-    "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    `We are also trained real estate agents. We can 
-    guide you in your journey to buy or sell your home.
-    General consultaion (not your formal real estate agent) 
-    is by the hourly fee. As the formal real estate agent fee, 
-    the commission fee is 6% of sales price
-    `,
-  ],
-];
+import { body } from "../services/Home";
 
 const Home = () => {
   return (
     <div className="container">
-      <Navigation />
-
       {/* Title */}
 
       <div className="titleImage"></div>
-      <h2 className="titleText">MT Consulting</h2>
+      <div className="titleText">
+        <p className="titleHeading">Money Theory</p>
+        <p className="titleSubHeading"> Finance and Business Coaching</p>
+      </div>
 
       {/* Body */}
 
-      <ItemGrid title="Business & Marketing Solutions" list={services} />
-      <ItemGrid title="Become a client" list={client} />
+      {/* Address, Phone */}
 
-      {/* social media */}
-      <SocialLink />
+      <Container fluid="md">
+        <Row>
+          <Col s={12} m={6} lg={4}>
+            <div className="address">
+              <p>Covering all of Orange County, CA </p>
+              <p>
+                <b>Email: </b> moneytheory34@gmail.com{" "}
+              </p>
+              <p>
+                <b>Hours:</b> Mon - Fri: 10am - 6pm{" "}
+              </p>
+              <p>
+                <b>Phone: </b>(714) 383 - 0695{" "}
+              </p>
+              {/* <p>Email: goodjobstax@gmail.com | goodjobs92843@sbcglobal.net </p> */}
+            </div>
+          </Col>
+          <Col s={12} m={6} lg={8}>
+            <iframe
+              title="Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42445.56402102732!2d-117.9746008949834!3d33.7262157342606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd270b73476835%3A0x464c4b5cfd95a7eb!2sMile%20Square%20Regional%20Park!5e0!3m2!1sen!2sus!4v1690610750560!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* Grid 1, images */}
+      <ItemGrid list={body} />
     </div>
   );
 };
