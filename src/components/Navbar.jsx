@@ -7,7 +7,7 @@ const Navigation = () => {
     <>
       <Navbar sticky="top" expand="lg" className="mt-1 mb-4 mx-auto navStyle">
         <Container>
-          <Navbar.Brand href="/">Money Theory</Navbar.Brand>
+          <Navbar.Brand href="/MT-Consulting/#/">Money Theory</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
