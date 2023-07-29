@@ -25,10 +25,8 @@ const Home = () => {
         <Row>
           <Col s={12} m={6} lg={4}>
             <div className="address">
-              <p>
-                Serving all of Orange County, CA via in-person and online.
-                Available in all other areas via online meetings
-              </p>
+              <p>Serving all of Orange County, CA (in-person and online).</p>
+              <p>Available in all other areas (via online meetings)</p>
               <p>
                 <b>Email: </b> moneytheory34@gmail.com{" "}
               </p>
