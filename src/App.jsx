@@ -1,5 +1,4 @@
 import "./App.css";
-import "/scss/main.scss";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Appointment from "./pages/Appointment";

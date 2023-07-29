@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import "../style/font.css";
 import "../style/main.css";
 import ItemGrid from "../components/ItemGrid";
-import { body } from "../services/Home";
+import { coach, business } from "../services/Home";
 
 const Home = () => {
   return (
@@ -25,7 +25,10 @@ const Home = () => {
         <Row>
           <Col s={12} m={6} lg={4}>
             <div className="address">
-              <p>Covering all of Orange County, CA </p>
+              <p>
+                Serving all of Orange County, CA via in-person and online.
+                Available in all other areas via online meetings
+              </p>
               <p>
                 <b>Email: </b> moneytheory34@gmail.com{" "}
               </p>
@@ -52,7 +55,8 @@ const Home = () => {
       </Container>
 
       {/* Grid 1, images */}
-      <ItemGrid list={body} />
+      <ItemGrid list={coach} title="Financial Coaching" />
+      <ItemGrid list={business} title="Business & Marketing Solutions" />
     </div>
   );
 };
