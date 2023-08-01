@@ -17,16 +17,16 @@ const AnnouncementGrid = (props) => {
               <div className="gridText">
                 <div className="title">
                   <p>
-                    <b>{item.Title}</b>
+                    <b>{item.title}</b>
                   </p>
-                  <p>{item.Date}</p>
+                  <p>{item.date}</p>
                 </div>
-                <p>{showMore ? item.Story : item.Story.substring(0, 150)}</p>
+                <p>{showMore ? item.story : item.story.substring(0, 150)}</p>
                 <span
                   onClick={() => setShowMore(!showMore)}
                   className="showMoreStyle"
                 >
-                  {item.Story.length > 200
+                  {item.story.length > 200
                     ? showMore
                       ? "Hide"
                       : "Show More"

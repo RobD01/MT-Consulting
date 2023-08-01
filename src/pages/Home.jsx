@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import "../style/font.css";
 import "../style/main.css";
 import ItemGrid from "../components/ItemGrid";
-import { coach, business } from "../services/Home";
+import { coach, business, realEstate } from "../services/Home";
 
 const Home = () => {
   return (
@@ -33,10 +33,11 @@ const Home = () => {
               <p>
                 <b>Hours:</b> Mon - Fri: 10am - 6pm{" "}
               </p>
-              <p>
-                <b>Phone: </b>(714) 383 - 0695{" "}
-              </p>
-              {/* <p>Email: goodjobstax@gmail.com | goodjobs92843@sbcglobal.net </p> */}
+
+              <a href="/MT-Consulting/#/appointment">
+                {" "}
+                <button>Schedule an Appointment</button>
+              </a>
             </div>
           </Col>
           <Col s={12} m={6} lg={8}>
@@ -55,7 +56,7 @@ const Home = () => {
       {/* Grid 1, images */}
       <ItemGrid list={coach} title="Financial Coaching" />
       <ItemGrid list={business} title="Business & Marketing Solutions" />
-      <ItemGrid list={business} title="Real Estate Consultation" />
+      <ItemGrid list={realEstate} title="Real Estate Consultation" />
     </div>
   );
 };

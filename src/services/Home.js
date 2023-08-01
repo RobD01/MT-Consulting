@@ -27,12 +27,10 @@ export const coach = [
     id: 3,
     image:
       "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Real Estate Consultation",
-    text: `We understand that purchasing or selling 
-    a home can be both an exciting and overwhelming
-    experience. We have access to a wide range of 
-    listings and potential buyers, allowing us to 
-    connect the right people at the right time. `,
+    title: "Complimentary Education",
+    text: `We provide complimentary finance and 
+    business lectures on the Youtube channel and
+    Patreon. See Social Media links below.`,
   },
 ];
 
@@ -42,10 +40,10 @@ export const business = [
     image:
       "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Photography & Videography",
-    text: `Developing and implementing strategies to 
-    strengthen your online footprint. Your customer's
-    attention is a scarce resouce, and we can help you
-    gain market share.`,
+    text: `We strive to capture moments that truly tell a 
+    story. From weddings and corporate events to product
+    photography and promotional videos, our comprehensive
+    range of services caters to various needs. `,
   },
 
   {
@@ -53,24 +51,19 @@ export const business = [
     image:
       "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Web development",
-    text: `.`,
+    text: `We create websites with appealing designs and intuitive 
+    functionality and exceptional user experiences. We also
+    offer routine maintenance and timely updates. `,
   },
   {
     id: 3,
     image:
       "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Business strategies",
-    text: `Competitie strategy, budgeting, and cash flow analysis.`,
-  },
-
-  {
-    id: 4,
-    image:
-      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Complimentary Education",
-    text: `We provide complimentary finance and 
-    business lectures on the Youtube channel and
-    Patreon. See Social Media links below.`,
+    title: "Business Analytics",
+    text: `Market research and analysis to identify opportunities,
+    threats, and trends that will impact your business.
+    We focus on crafting innovative and pragmatic solutions
+    specific to each client's unique circumstances. `,
   },
 ];
 

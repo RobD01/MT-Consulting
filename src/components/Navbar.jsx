@@ -13,11 +13,10 @@ const Navigation = () => {
             <Nav className="me-auto">
               <Nav.Link href="/MT-Consulting/#/">Home</Nav.Link>
               <Nav.Link href="/MT-Consulting/#/appointment">
-                Schedule Appointment
+                Appointment
               </Nav.Link>
-              <Nav.Link href="/MT-Consulting/#/announcement">
-                Announcement
-              </Nav.Link>
+              <Nav.Link href="/MT-Consulting/#/message">Message</Nav.Link>
+              <Nav.Link href="/MT-Consulting/#/learn">Learn</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

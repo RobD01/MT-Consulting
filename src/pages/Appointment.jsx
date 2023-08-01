@@ -22,6 +22,10 @@ const Appointment = () => {
       {isLoading ? <Loading /> : null}
 
       <p>Please select date and time from the menu below</p>
+      <p>
+        Appointments are only finalized and confirmed when payment is made in
+        full
+      </p>
 
       <iframe
         // Link to schedule
