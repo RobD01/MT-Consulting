@@ -58,33 +58,6 @@
   font-family: "Red Hat Display";
 }
 
-@media (min-width: 760px) and (max-width: 1000px) {
-  .titleHeading {
-    font-size: 3rem;
-  }
-  .titleSubHeading {
-    font-size: 1.5rem;
-  }
-  .titleText {
-    width: 75%;
-    transform: translate(20%, -150%);
-  }
-}
-
-@media (max-width: 760px) {
-  .titleHeading {
-    font-size: 2rem;
-  }
-  .titleSubHeading {
-    font-size: 1.2rem;
-  }
-  .titleText {
-    width: 85%;
-    transform: translate(10%, -150%);
-    padding: 5px;
-  }
-}
-
 .flexItem {
   width: 5rem;
   height: auto;
@@ -126,5 +99,59 @@
 
 .showMoreStyle {
   color: darkblue;
-  text-align: right;
+}
+
+.merch {
+  width: 30%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.button-dark {
+  background-color: rgb(193, 227, 238);
+  box-shadow: var(--shadow);
+}
+
+.stripe {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+/* Tablet */
+@media (min-width: 760px) and (max-width: 1000px) {
+  .titleHeading {
+    font-size: 3rem;
+  }
+  .titleSubHeading {
+    font-size: 1.5rem;
+  }
+  .titleText {
+    width: 75%;
+    transform: translate(20%, -150%);
+  }
+
+  .merch {
+    width: 50%;
+  }
+}
+
+/* Phone */
+@media (max-width: 760px) {
+  .titleHeading {
+    font-size: 2rem;
+  }
+  .titleSubHeading {
+    font-size: 1.2rem;
+  }
+  .titleText {
+    width: 85%;
+    transform: translate(10%, -150%);
+    padding: 5px;
+  }
+
+  .merch {
+    width: 65%;
+  }
 }

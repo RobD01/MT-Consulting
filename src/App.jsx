@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Appointment from "./pages/Appointment";
 import Learn from "./pages/Learn";
 import Message from "./pages/Message";
+import Merch from "./pages/Merch";
+
 import Navigation from "./components/Navbar";
 import SocialComponent from "./components/Social";
 
@@ -19,6 +21,7 @@ function App() {
             <Route path="appointment" element={<Appointment />} />
             <Route path="learn" element={<Learn />} />
             <Route path="message" element={<Message />} />
+            <Route path="merch" element={<Merch />} />
           </Route>
         </Routes>
       </HashRouter>
