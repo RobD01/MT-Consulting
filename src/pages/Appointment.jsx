@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
 import Loading from "../components/Loading";
+import Calendar from "../components/Calendar";
+import Stripe from "../components/Stripe";
 
 const Appointment = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -24,15 +26,17 @@ const Appointment = () => {
       <p>Please select date and time from the menu below</p>
       <p>
         Appointments are only finalized and confirmed when payment is made in
-        full
+        full.
       </p>
+      <p>Cost: $ 60/hour</p>
 
-      <iframe
-        // Link to schedule
-        src="https://cal.com/liem-bui-4ewtvl/30min"
-        className="appointment"
-        title="appointment"
-      ></iframe>
+      <Calendar />
+
+      {/* Payment */}
+      <Stripe
+        title="Payment"
+        stripe="https://buy.stripe.com/6oEbIXeY04wp0c87st"
+      />
     </div>
   );
 };

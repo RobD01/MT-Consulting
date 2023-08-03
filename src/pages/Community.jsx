@@ -28,13 +28,20 @@ const Community = () => {
 
       {isLoading ? <Loading /> : null}
 
+      {/* Message Data */}
       <CommunityGrid list={data} />
+
+      {/* Google Form */}
       <iframe
-        src="https://forms.gle/kapWtWwZFbLXNTC79"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScRp7IM4dYw72UIdz2LMdMDBMO69mhMi9OaaIsfgpz75OdWSA/viewform?embedded=true"
+        width="700"
+        height="520"
         frameborder="0"
-        width="100%"
-        height="1100px"
-      ></iframe>
+        marginheight="0"
+        marginwidth="0"
+      >
+        Loading…
+      </iframe>
     </div>
   );
 };
