@@ -1,8 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
+import Loading from "../components/Loading";
+import { useState, useEffect } from "react";
 
 const Message = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+  }, []);
+
   return (
     <div className="container text-center">
       <h2 className="text-center">Inquiries / Send a Message</h2>
@@ -10,6 +21,7 @@ const Message = () => {
         Please complete form below to send us a message. We will respond to you
         shortly
       </p>
+      {isLoading ? <Loading /> : null}
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSeEbd2lrylydSY5kAFs2mvGYxik__hNIMBBINFJJr7V94h2SQ/viewform?embedded=true"
         width="100%"
