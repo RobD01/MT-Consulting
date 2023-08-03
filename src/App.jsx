@@ -1,5 +1,6 @@
 import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Appointment from "./pages/Appointment";
 import Learn from "./pages/Learn";
@@ -9,8 +10,22 @@ import Community from "./pages/Community";
 
 import Navigation from "./components/Navbar";
 import SocialComponent from "./components/Social";
+import CommunityPost from "./components/CommunityPost";
 
 function App() {
+  const [data, setData] = useState([]);
+
+  // Loading icon while getting data
+  useEffect(() => {
+    fetch(
+      "https://opensheet.elk.sh/1F-6Ohqy8r7ih6mNocNBB4ksx1iobdqPpwdc3pJZo5dk/Sorted"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
+
   return (
     <>
       <Navigation />
@@ -23,7 +38,11 @@ function App() {
             <Route path="learn" element={<Learn />} />
             <Route path="message" element={<Message />} />
             <Route path="merch" element={<Merch />} />
-            <Route path="community" element={<Community />} />
+            <Route path="community" element={<Community data={data} />} />
+            <Route
+              path="community/:id/"
+              element={<CommunityPost data={data} />}
+            />
           </Route>
         </Routes>
       </HashRouter>

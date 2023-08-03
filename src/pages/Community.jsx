@@ -6,26 +6,10 @@ import CommunityGrid from "../components/CommunityGrid";
 import Loading from "../components/Loading";
 import InfoToggle from "../components/InfoToggle";
 
-const Community = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [data, setData] = useState([]);
-
-  // Loading icon while getting data
-  useEffect(() => {
-    setIsLoading(true);
-    fetch(
-      "https://opensheet.elk.sh/1F-6Ohqy8r7ih6mNocNBB4ksx1iobdqPpwdc3pJZo5dk/Sorted"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data);
-        setIsLoading(false);
-      });
-  }, []);
-
+const Community = ({ data }) => {
   const messageBoard = (
     <>
-      {isLoading ? <Loading /> : null} <CommunityGrid list={data} />;
+      <CommunityGrid list={data} />
     </>
   );
 

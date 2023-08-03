@@ -16,14 +16,14 @@ const CommunityGrid = (props) => {
               <div className="message-grid">
                 <div className="message-header">
                   <p className="message-date">{item.Timestamp}</p>
-                  <p className="message-name">Name: {item["Name / Alias"]}</p>
+                  <p className="message-name">Name: {item.Name}</p>
+                  <p className="message-tag"># {item.Tags}</p>
                 </div>
                 <p className="message-title">{item.Title}</p>
-                <p className="message-tag"># {item["Tags (# is optional)"]}</p>
                 <p className="message-content">
                   {item.Message.substring(0, 150)}
                 </p>
-                <Link to={`/message/${item.id}`}>
+                <Link to={`/community/${item.id}`}>
                   <button>View Full Post</button>
                 </Link>
               </div>
