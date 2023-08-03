@@ -16,6 +16,7 @@ const Navigation = () => {
                 Appointment
               </Nav.Link>
               <Nav.Link href="/MT-Consulting/#/message">Message</Nav.Link>
+              <Nav.Link href="/MT-Consulting/#/community">Community</Nav.Link>
               <Nav.Link href="/MT-Consulting/#/learn">Learn</Nav.Link>
               <Nav.Link href="/MT-Consulting/#/merch">Merch</Nav.Link>
             </Nav>

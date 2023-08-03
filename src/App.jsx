@@ -5,6 +5,7 @@ import Appointment from "./pages/Appointment";
 import Learn from "./pages/Learn";
 import Message from "./pages/Message";
 import Merch from "./pages/Merch";
+import Community from "./pages/Community";
 
 import Navigation from "./components/Navbar";
 import SocialComponent from "./components/Social";
@@ -22,6 +23,7 @@ function App() {
             <Route path="learn" element={<Learn />} />
             <Route path="message" element={<Message />} />
             <Route path="merch" element={<Merch />} />
+            <Route path="community" element={<Community />} />
           </Route>
         </Routes>
       </HashRouter>

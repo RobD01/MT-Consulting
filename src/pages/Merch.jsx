@@ -31,7 +31,11 @@ const Merch = () => {
               . Through their love of cooking and culture, they designed the
               names of Vietnamese foods into the shape of Vietnam{" "}
             </p>
-            <a>
+            <a
+              href="https://buy.stripe.com/9AQdR517aaUNcYU9AA"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="button-dark">Buy Now</button>
             </a>
 

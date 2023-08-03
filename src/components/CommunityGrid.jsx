@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import "../style/main.css";
 
-const AnnouncementGrid = (props) => {
+const CommunityGrid = (props) => {
   const [showMore, setShowMore] = useState(false);
 
   return (
@@ -17,21 +17,13 @@ const AnnouncementGrid = (props) => {
               <div className="gridText">
                 <div className="title">
                   <p>
-                    <b>{item.title}</b>
+                    <b>{item.Title}</b>
                   </p>
-                  <p>{item.date}</p>
+                  <p>{item.Timestamp}</p>
+                  <p>Name: {item["Name / Alias"]}</p>
                 </div>
-                <p>{showMore ? item.story : item.story.substring(0, 150)}</p>
-                <span
-                  onClick={() => setShowMore(!showMore)}
-                  className="showMoreStyle"
-                >
-                  {item.story.length > 200
-                    ? showMore
-                      ? "Hide"
-                      : "Show More"
-                    : null}
-                </span>
+                <p>{item.Message}</p>
+                <p>Tags: {item["Tags (# is optional)"]}</p>
               </div>
             </Col>
           ))}
@@ -41,4 +33,4 @@ const AnnouncementGrid = (props) => {
   );
 };
 
-export default AnnouncementGrid;
+export default CommunityGrid;

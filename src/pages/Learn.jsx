@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
-import AnnoucementGrid from "../components/AnnoucementGrid";
+
 import { LearnBlog } from "../services/Learn";
 
 const Learn = () => {
@@ -13,7 +13,6 @@ const Learn = () => {
         resources include the blog section below, and our patreon and Youtube at
         the bottom.
       </p>
-      <AnnoucementGrid list={LearnBlog} />
     </div>
   );
 };
