@@ -3,10 +3,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import "../style/main.css";
+import { Link } from "react-router-dom";
 
 const CommunityGrid = (props) => {
-  const [showMore, setShowMore] = useState(false);
-
   return (
     <>
       <h4 className="text-center mt-5">{props.title}</h4>
@@ -14,16 +13,19 @@ const CommunityGrid = (props) => {
         <Row>
           {props.list.map((item) => (
             <Col key={item.id} xs={12} md={6} lg={4}>
-              <div className="gridText">
-                <div className="title">
-                  <p>
-                    <b>{item.Title}</b>
-                  </p>
-                  <p>{item.Timestamp}</p>
-                  <p>Name: {item["Name / Alias"]}</p>
+              <div className="message-grid">
+                <div className="message-header">
+                  <p className="message-date">{item.Timestamp}</p>
+                  <p className="message-name">Name: {item["Name / Alias"]}</p>
                 </div>
-                <p>{item.Message}</p>
-                <p>Tags: {item["Tags (# is optional)"]}</p>
+                <p className="message-title">{item.Title}</p>
+                <p className="message-tag"># {item["Tags (# is optional)"]}</p>
+                <p className="message-content">
+                  {item.Message.substring(0, 150)}
+                </p>
+                <Link to={`/message/${item.id}`}>
+                  <button>View Full Post</button>
+                </Link>
               </div>
             </Col>
           ))}

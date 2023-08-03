@@ -5,6 +5,7 @@
   --gridHeight: 250px;
   --shadow: 0 3px 10px rgba(104, 104, 104, 0.3);
   --gridColor: #eeeaf2;
+  --grid-message: #f1f6f8;
 }
 
 /* Main Styles */
@@ -22,7 +23,7 @@
 .gridText {
   background-color: var(--gridColor);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 2%;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
@@ -93,14 +94,46 @@
   height: 1000px;
 }
 
-.title {
-  background-color: #ece0b4;
+/* Community Message Board */
+.message-grid {
+  background-color: var(--grid-message);
+  font-size: 1rem;
+  padding: 2%;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  font-family: "Roboto";
+  word-wrap: break-word;
+}
+
+.message-header p {
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: left;
+}
+
+.messge-date {
+  text-align: right;
+}
+
+.message-tag {
+  color: darkgoldenrod;
+}
+
+.message-title {
+  font-family: "Red Hat Display";
+  font-size: 1.3rem;
+}
+
+.message-content {
+  font-family: "Roboto";
 }
 
 .showMoreStyle {
   color: darkblue;
 }
 
+/* Merch */
 .merch {
   width: 30%;
   margin: auto;

@@ -9,8 +9,6 @@ import InfoToggle from "../components/InfoToggle";
 const Community = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
-  // const [showMessage, setShowMessage] = useState([]);
-  // const [showForm, setShowForm] = useState([]);
 
   // Loading icon while getting data
   useEffect(() => {
@@ -34,8 +32,8 @@ const Community = () => {
   const inputForm = (
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLScRp7IM4dYw72UIdz2LMdMDBMO69mhMi9OaaIsfgpz75OdWSA/viewform?embedded=true"
-      width="800"
-      height="1100"
+      width="100%"
+      height="1200"
       frameborder="0"
       marginheight="0"
       marginwidth="0"
@@ -47,6 +45,14 @@ const Community = () => {
   return (
     <div className="container text-center">
       <h2 className="text-center">Community</h2>
+
+      <p>
+        We encourage the open discussion so that we can learn from each other,
+        and share ideas. <br />
+        This is a simple forum app with no user log in, and no reply function.
+        <br />
+        After submitting the form, refresh the page to display the new message
+      </p>
 
       {/* Message Data */}
       <div>
