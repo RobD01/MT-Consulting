@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
 import CommunityGrid from "../components/CommunityGrid";
-import Loading from "../components/Loading";
 import InfoToggle from "../components/InfoToggle";
 
 const Community = ({ data }) => {
@@ -13,17 +11,30 @@ const Community = ({ data }) => {
     </>
   );
 
+  const refresh = () => {
+    window.location.reload(false);
+  };
+
   const inputForm = (
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLScRp7IM4dYw72UIdz2LMdMDBMO69mhMi9OaaIsfgpz75OdWSA/viewform?embedded=true"
-      width="100%"
-      height="1200"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-    >
-      Loading…
-    </iframe>
+    <>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScRp7IM4dYw72UIdz2LMdMDBMO69mhMi9OaaIsfgpz75OdWSA/viewform?embedded=true"
+        width="100%"
+        height="1150"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        Loading…
+      </iframe>
+      <button onClick={refresh} className="button-dark">
+        Click Here
+      </button>
+      <p>
+        Click on the button above after submitting, to refresh the page and
+        update with your new post
+      </p>
+    </>
   );
 
   return (

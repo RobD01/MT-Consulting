@@ -3,6 +3,8 @@ import "../style/font.css";
 import "../style/main.css";
 import Loading from "../components/Loading";
 import { useState, useEffect } from "react";
+// import IframeResizer from "iframe-resizer-react";
+// import { resize } from "../utils/iframeResizer.contentWindow.min.js";
 
 const Message = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -22,6 +24,12 @@ const Message = () => {
         shortly
       </p>
       {isLoading ? <Loading /> : null}
+      {/* <IframeResizer
+        log
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeEbd2lrylydSY5kAFs2mvGYxik__hNIMBBINFJJr7V94h2SQ/viewform?embedded=true"
+        style={{ minWidth: "100%" }}
+      /> */}
+
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSeEbd2lrylydSY5kAFs2mvGYxik__hNIMBBINFJJr7V94h2SQ/viewform?embedded=true"
         width="100%"
