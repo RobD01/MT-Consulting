@@ -15,10 +15,11 @@ const Stripe = (props) => {
           </Col>
           <Col xs={12} md={6} lg={4}>
             <h4>{props.title}</h4>
-            <p>{props.description}</p>
+
             <a href={props.stripe} target="_blank" rel="noreferrer">
-              <button className="button-dark">Buy Now</button>
+              <button className="button-dark mt-3 mb-3">Buy Now</button>
             </a>
+            <p>{props.description}</p>
 
             <img
               src="https://www.goswimexcel.com/wp-content/uploads/2020/05/powered-by-stripe.png"

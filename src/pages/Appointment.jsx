@@ -25,11 +25,21 @@ const Appointment = () => {
     </>
   );
 
+  const description = (
+    <p>
+      Cost: $ 60/hour. <br />
+      <br />
+      The quantity refers to how long the appointment is (in hours). <br />
+      For hours pre-purchased, we will maintain a record for your hours, and
+      provide a detailed invoice.
+    </p>
+  );
+
   const payment = (
     <Stripe
       title="Appointment Payment"
       stripe="https://buy.stripe.com/6oEbIXeY04wp0c87st"
-      description="Cost: $ 60/hour. The quantity refers to how long the appointment is (hours)."
+      description={description}
     />
   );
 
@@ -40,7 +50,8 @@ const Appointment = () => {
       <p>Please select date and time from the menu below</p>
       <p>
         Appointments are only finalized and confirmed when payment is made in
-        full. See payment section at the bottom
+        full. <br />
+        See payment section at the bottom.
       </p>
 
       <InfoToggle section="Calendar" content={calendar} />

@@ -32,6 +32,18 @@ export const coach = [
     business lectures on the Youtube channel and
     Patreon. See Social Media links below.`,
   },
+  {
+    id: 4,
+    image:
+      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Career Coaching",
+    text: `With vast industry knowledge, we help 
+    you craft your resumes/cover letters, improving 
+    interview skills, networking strategically. Whether
+    it is exploring new career paths or enhancing
+    existing ones, our career coaching services provide
+    invaluable guidance for long-term success.`,
+  },
 ];
 
 export const business = [
