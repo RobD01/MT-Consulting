@@ -4,10 +4,8 @@ import "../style/font.css";
 import "../style/main.css";
 import CommunityGrid from "../components/CommunityGrid";
 import InfoToggle from "../components/InfoToggle";
-import axios from "axios";
-import queryString from "query-string";
-import cors from "cors";
-import Button from "react-bootstrap/Button";
+// import axios from "axios";
+// import queryString from "query-string";
 import Form from "react-bootstrap/Form";
 
 // To connect Google Forms into my own form?
@@ -22,9 +20,9 @@ const Community = ({ data }) => {
     </>
   );
 
-  // const refresh = () => {
-  //   window.location.reload(false);
-  // };
+  const refresh = () => {
+    window.location.reload(false);
+  };
 
   // const inputForm = (
   //   <>
@@ -48,38 +46,71 @@ const Community = ({ data }) => {
   //   </>
   // );
 
-  const myRequest = (url) => {
-    let response;
-    try {
-      response = axios.post(url, null, null);
-    } catch (e) {
-      response = e;
-    }
-    console.log(response);
-  };
+  // const myRequest = (url) => {
+  //   let response;
+  //   try {
+  //     response = axios.post(url, null, null);
+  //   } catch (e) {
+  //     response = e;
+  //   }
+  //   console.log(response);
+  // };
 
-  const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setState({ [e.target.name]: e.target.value });
+  // };
 
   const handleSubmit = (e) => {
-    const data = {
-      ...state,
-    };
-    const id = "11XMF4FDbMRZOgMSIuvcCmDHL3P6NOt0pBNF8kFmCNMY"; //YOUR FORM ID
-    e.preventDefault();
-    const formUrl = "https://docs.google.com/forms/d/" + id + "/formResponse";
-    const q = queryString.stringifyUrl({
-      url: formUrl,
-      query: data,
-    });
-    myRequest(q);
-    e.preventDefault();
+    //   const data = {
+    //     ...state,
+    //   };
+    //   const id = "11XMF4FDbMRZOgMSIuvcCmDHL3P6NOt0pBNF8kFmCNMY"; //YOUR FORM ID
+    // e.preventDefault();
+    refresh();
+    //   const formUrl = "https://docs.google.com/forms/d/" + id + "/formResponse";
+    //   const q = queryString.stringifyUrl({
+    //     url: formUrl,
+    //     query: data,
+    //   });
+    //   myRequest(q);
   };
 
   const inputForm = (
     <>
-      <Form>
+      <form
+        method="POST"
+        action="https://docs.google.com/forms/d/11XMF4FDbMRZOgMSIuvcCmDHL3P6NOt0pBNF8kFmCNMY/formResponse"
+      >
+        <Form.Control
+          className="m-2"
+          type="text"
+          name="entry.1886776765"
+          placeholder="Name"
+        />
+        <Form.Control
+          className="m-2"
+          type="text"
+          name="entry.210904117"
+          placeholder="Post Title"
+        />
+        <Form.Control
+          className="m-2"
+          type="text"
+          name="entry.1367927923"
+          placeholder="Post Message"
+        />
+        <Form.Control
+          className="m-2"
+          type="text"
+          name="entry.828154271"
+          placeholder="Post Tags"
+        />
+
+        <button className="button-dark m-2" onClick={handleSubmit}>
+          Submit
+        </button>
+      </form>
+      {/* <Form>
         <Form.Group className="mb-2">
           <Form.Control
             type="text"
@@ -116,7 +147,7 @@ const Community = ({ data }) => {
         <Button variant="primary" onClick={handleSubmit}>
           Submit
         </Button>
-      </Form>
+      </Form> */}
     </>
   );
 
