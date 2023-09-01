@@ -1,5 +1,6 @@
-export const handleSubmit = (props) => {
-  const scriptURL = props.url;
+const handleSubmit = () => {
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbzYp9v78JYdsRHktQ5mrl3SUhVmZgtqHU6F6il8YF0kS27VzxuvJx85u593sGjwpUzuDw/exec";
   const form = document.querySelector("#form");
   const btn = document.querySelector("#submit");
 
@@ -21,3 +22,5 @@ export const handleSubmit = (props) => {
       });
   });
 };
+
+export default handleSubmit;

@@ -1,20 +1,58 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
-import Loading from "../components/Loading";
-import { useState, useEffect } from "react";
-// import IframeResizer from "iframe-resizer-react";
-// import { resize } from "../utils/iframeResizer.contentWindow.min.js";
+import Form from "react-bootstrap/Form";
+import handleSubmit from "../components/FormSubmit/message";
+
+const url =
+  "https://script.google.com/macros/s/AKfycbxTk-rT6WztixSv2OQ_lEEU9jVcIrS6SYI5KKziHFbgt8AZrkwU1NEx4otzjhawOgs5vw/exec";
 
 const Message = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const inputForm = (
+    <>
+      <form id="form">
+        <Form.Control
+          name="Name"
+          className="m-2"
+          type="text"
+          placeholder="Name"
+        />
+        <Form.Control
+          name="Company"
+          className="m-2"
+          type="text"
+          placeholder="Company"
+        />
+        <Form.Control
+          name="Email"
+          className="m-2"
+          type="email"
+          placeholder="Email"
+        />
+        <Form.Control
+          name="Phone"
+          className="m-2"
+          type="text"
+          placeholder="Phone"
+        />
+        <Form.Control
+          name="Message"
+          className="m-2"
+          type="text"
+          placeholder="Message"
+        />
 
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-  }, []);
+        <button
+          className="button-dark m-2"
+          type="submit"
+          id="submit"
+          onClick={handleSubmit}
+        >
+          Submit
+        </button>
+      </form>
+    </>
+  );
 
   return (
     <div className="container text-center">
@@ -23,23 +61,8 @@ const Message = () => {
         Please complete form below to send us a message. We will respond to you
         shortly
       </p>
-      {isLoading ? <Loading /> : null}
-      {/* <IframeResizer
-        log
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeEbd2lrylydSY5kAFs2mvGYxik__hNIMBBINFJJr7V94h2SQ/viewform?embedded=true"
-        style={{ minWidth: "100%" }}
-      /> */}
 
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeEbd2lrylydSY5kAFs2mvGYxik__hNIMBBINFJJr7V94h2SQ/viewform?embedded=true"
-        width="100%"
-        height="1200"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-      >
-        Loading…
-      </iframe>
+      {inputForm}
     </div>
   );
 };
