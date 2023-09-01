@@ -21,7 +21,7 @@ const Home = () => {
 
       {/* Address, Phone */}
 
-      <Container fluid="md">
+      <Container fluid="md mt-5">
         <Row>
           <Col s={12} m={6} lg={4}>
             <div className="address">

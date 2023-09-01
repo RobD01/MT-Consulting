@@ -21,6 +21,7 @@ const SocialComponent = () => {
 
   return (
     <div className="d-flex justify-content-center">
+      <img src="imagesource.com/levi" alt="" />
       {socialLink.map((item) => (
         <a
           key={item.id}

@@ -18,7 +18,7 @@ function App() {
   // Loading icon while getting data
   useEffect(() => {
     fetch(
-      "https://opensheet.elk.sh/1F-6Ohqy8r7ih6mNocNBB4ksx1iobdqPpwdc3pJZo5dk/Sorted"
+      "https://opensheet.elk.sh/11dks1tQTP8nZKmoPQOG7T10N0UvrP9ndnXpwJbvaiA4/Sorted"
     )
       .then((response) => response.json())
       .then((data) => {
