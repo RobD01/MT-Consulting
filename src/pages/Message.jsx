@@ -4,9 +4,6 @@ import "../style/main.css";
 import Form from "react-bootstrap/Form";
 import handleSubmit from "../components/FormSubmit/message";
 
-const url =
-  "https://script.google.com/macros/s/AKfycbxTk-rT6WztixSv2OQ_lEEU9jVcIrS6SYI5KKziHFbgt8AZrkwU1NEx4otzjhawOgs5vw/exec";
-
 const Message = () => {
   const inputForm = (
     <>
@@ -39,6 +36,8 @@ const Message = () => {
           name="Message"
           className="m-2"
           type="text"
+          as="textarea"
+          rows={3}
           placeholder="Message"
         />
 

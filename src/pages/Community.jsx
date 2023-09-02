@@ -62,7 +62,8 @@ const Community = ({ data }) => {
         and share ideas. <br />
         This is a simple forum app with no user log in, and no reply function.
         <br />
-        After submitting the form, refresh the page to display the new message
+        After submitting the form, the page will refresh to display the new
+        message
       </p>
 
       {/* Message Data */}

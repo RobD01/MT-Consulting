@@ -15,7 +15,7 @@ const CommunityGrid = (props) => {
             <Col key={item.id} xs={12} md={6} lg={4}>
               <div className="message-grid">
                 <div className="message-header">
-                  <p className="message-date">{item.Timestamp}</p>
+                  <p className="message-date">{item.Date}</p>
                   <p className="message-name">Name: {item.Name}</p>
                   <p className="message-tag"># {item.Tags}</p>
                 </div>
