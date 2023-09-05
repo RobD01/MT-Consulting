@@ -24,7 +24,7 @@ const Community = ({ data }) => {
   };
 
   const filter =
-    search.length == 0
+    search.length == 0 || searchCategory.length == 0
       ? data
       : _.filter(data, (item) =>
           item[searchCategory.value].toLowerCase().includes(search)

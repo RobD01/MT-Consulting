@@ -33,6 +33,7 @@ const SearchBar = (props) => {
               options={options}
               onChange={props.handleSearchCategory}
               value={props.searchCategory}
+              placeholder="Select Category"
             />
           </Col>
         </Row>
