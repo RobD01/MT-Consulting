@@ -36,11 +36,13 @@ const Appointment = () => {
   );
 
   const payment = (
-    <Stripe
-      title="Appointment Payment"
-      stripe="https://buy.stripe.com/6oEbIXeY04wp0c87st"
-      description={description}
-    />
+    <div className="mt-5">
+      <Stripe
+        title="Appointment Payment"
+        stripe="https://buy.stripe.com/6oEbIXeY04wp0c87st"
+        description={description}
+      />
+    </div>
   );
 
   return (

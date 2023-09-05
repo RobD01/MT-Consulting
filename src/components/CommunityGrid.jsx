@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -8,7 +7,7 @@ import { Link } from "react-router-dom";
 const CommunityGrid = (props) => {
   return (
     <>
-      <h4 className="text-center mt-5">{props.title}</h4>
+      <h4 className="text-center">{props.title}</h4>
       <Container fluid="md" className="mt-4">
         <Row>
           {props.list.map((item) => (

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
@@ -5,17 +6,45 @@ import CommunityGrid from "../components/CommunityGrid";
 import InfoToggle from "../components/InfoToggle";
 import Form from "react-bootstrap/Form";
 import handleSubmit from "../components/FormSubmit/community";
+import SearchBar from "../components/SearchBar";
+import _ from "lodash";
 
 const Community = ({ data }) => {
+  // Search Bar
+
+  const [search, setSearch] = useState("");
+  const [searchCategory, setSearchCategory] = useState("");
+
+  const handleSearch = (event) => {
+    setSearch(event.target.value.toLowerCase());
+  };
+
+  const handleSearchCategory = (selectedOption) => {
+    setSearchCategory(selectedOption);
+  };
+
+  const filter =
+    search.length == 0
+      ? data
+      : _.filter(data, (item) =>
+          item[searchCategory.value].toLowerCase().includes(search)
+        );
+
   const messageBoard = (
     <>
-      <CommunityGrid list={data} />
+      <SearchBar
+        search={search}
+        handleSearch={handleSearch}
+        searchCategory={searchCategory}
+        handleSearchCategory={handleSearchCategory}
+      />
+      <CommunityGrid list={filter} />
     </>
   );
 
   const inputForm = (
     <>
-      <form id="form">
+      <form id="form" className="form">
         <Form.Control
           name="Name"
           className="m-2"
@@ -32,6 +61,8 @@ const Community = ({ data }) => {
           name="Message"
           className="m-2"
           type="text"
+          as="textarea"
+          rows={3}
           placeholder="Post Message"
         />
         <Form.Control
@@ -64,6 +95,8 @@ const Community = ({ data }) => {
         <br />
         After submitting the form, the page will refresh to display the new
         message
+        <br />
+        The top form is a search bar to filter the posts
       </p>
 
       {/* Message Data */}

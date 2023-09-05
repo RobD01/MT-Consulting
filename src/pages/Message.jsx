@@ -7,7 +7,7 @@ import handleSubmit from "../components/FormSubmit/message";
 const Message = () => {
   const inputForm = (
     <>
-      <form id="form">
+      <form id="form" className="form">
         <Form.Control
           name="Name"
           className="m-2"

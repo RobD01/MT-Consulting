@@ -43,8 +43,8 @@
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: relative;
-  transform: translate(50%, -150%);
-  width: 50%;
+  transform: translate(30%, -120%);
+  width: 60%;
   padding: 20px;
   text-align: center;
   font-family: Bebas Neue;
@@ -152,8 +152,13 @@
   margin-top: 2rem;
 }
 
+.form {
+  width: 70%;
+  margin: auto;
+}
+
 /* Tablet */
-@media (min-width: 760px) and (max-width: 1000px) {
+@media (min-width: 770px) and (max-width: 1000px) {
   .titleHeading {
     font-size: 3rem;
   }
@@ -171,7 +176,7 @@
 }
 
 /* Phone */
-@media (max-width: 760px) {
+@media (max-width: 770px) {
   .titleHeading {
     font-size: 2rem;
   }
@@ -186,5 +191,9 @@
 
   .merch {
     width: 65%;
+  }
+
+  .form {
+    width: 100%;
   }
 }
