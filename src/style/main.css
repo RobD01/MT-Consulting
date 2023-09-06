@@ -134,6 +134,10 @@
   color: darkblue;
 }
 
+.pagination {
+  padding: 1rem;
+}
+
 /* Merch */
 .merch {
   width: 30%;

@@ -27,16 +27,21 @@ function PaginatedItems({ itemsPerPage, filter }) {
 
   return (
     <>
-      <CommunityGrid list={filter} />
-      {/* <ReactPaginate
+      <CommunityGrid list={currentItems} />
+      <h5 className="mt-3">Pages</h5>
+      <ReactPaginate
         breakLabel="..."
-        nextLabel="next >"
+        nextLabel="Next"
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
-        previousLabel="< previous"
+        previousLabel="Previous"
         renderOnZeroPageCount={null}
-      /> */}
+        nextClassName="pagination"
+        previousClassName="pagination"
+        className="d-flex justify-content-center"
+        pageClassName="pagination"
+      />
     </>
   );
 }
