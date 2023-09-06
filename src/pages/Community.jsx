@@ -8,6 +8,7 @@ import Form from "react-bootstrap/Form";
 import handleSubmit from "../components/FormSubmit/community";
 import SearchBar from "../components/SearchBar";
 import _ from "lodash";
+import PaginatedItems from "../components/PaginatedItems";
 
 const Community = ({ data }) => {
   // Search Bar
@@ -38,7 +39,8 @@ const Community = ({ data }) => {
         searchCategory={searchCategory}
         handleSearchCategory={handleSearchCategory}
       />
-      <CommunityGrid list={filter} />
+      {/* <CommunityGrid list={filter} /> */}
+      <PaginatedItems itemsPerPage={5} filter={filter} />
     </>
   );
 
