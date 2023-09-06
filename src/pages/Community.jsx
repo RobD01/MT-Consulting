@@ -39,7 +39,7 @@ const Community = ({ data }) => {
         searchCategory={searchCategory}
         handleSearchCategory={handleSearchCategory}
       />
-      {/* <CommunityGrid list={filter} /> */}
+
       <PaginatedItems itemsPerPage={2} filter={filter} />
     </>
   );
