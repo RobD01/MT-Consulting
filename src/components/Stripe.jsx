@@ -4,6 +4,7 @@ import "../style/main.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Stripe = (props) => {
   return (
@@ -15,7 +16,12 @@ const Stripe = (props) => {
             <>
               <Col xs={12} md={6} lg={4}>
                 {" "}
-                <img src={props.image} alt="Poster" />{" "}
+                <LazyLoadImage
+                  src={props.image}
+                  alt="poster"
+                  className="w-100"
+                  effect="blur"
+                />
               </Col>
               <Col xs={12} md={6} lg={4}>
                 <a href={props.stripe} target="_blank" rel="noreferrer">

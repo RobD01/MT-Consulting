@@ -16,7 +16,7 @@ const SearchBar = (props) => {
     <div className="form">
       <Container fluid="md">
         <Row>
-          <Col xs={12} md={8}>
+          <Col xs={12} md={8} className="mt-1">
             <Form>
               <Form.Group>
                 <Form.Control
@@ -28,7 +28,7 @@ const SearchBar = (props) => {
               </Form.Group>
             </Form>
           </Col>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={4} className="mt-1">
             <Select
               options={options}
               onChange={props.handleSearchCategory}

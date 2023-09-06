@@ -2,7 +2,6 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
-import CommunityGrid from "../components/CommunityGrid";
 import InfoToggle from "../components/InfoToggle";
 import Form from "react-bootstrap/Form";
 import handleSubmit from "../components/FormSubmit/community";
@@ -40,7 +39,7 @@ const Community = ({ data }) => {
         handleSearchCategory={handleSearchCategory}
       />
 
-      <PaginatedItems itemsPerPage={2} filter={filter} />
+      <PaginatedItems itemsPerPage={3} items={filter} />
     </>
   );
 
@@ -91,12 +90,10 @@ const Community = ({ data }) => {
       <h2 className="text-center">Community</h2>
 
       <p>
-        We encourage the open discussion so that we can learn from each other,
-        and share ideas. <br />
         This is a simple forum app with no user log in, and no reply function.
         <br />
-        After submitting the form, the page will refresh to display the new
-        message
+        After submitting the form, the page will refresh. It may take a few
+        minutes to display the new post
         <br />
         The top form is a search bar to filter the posts
       </p>

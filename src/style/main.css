@@ -42,10 +42,10 @@
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  position: relative;
-  transform: translate(30%, -120%);
+  position: absolute;
+  transform: translate(20%, -120%);
   width: 60%;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   font-family: Bebas Neue;
 }
@@ -171,8 +171,8 @@
     font-size: 1.5rem;
   }
   .titleText {
-    width: 75%;
-    transform: translate(20%, -150%);
+    width: 50%;
+    transform: translate(25%, -150%);
   }
 
   .merch {
@@ -189,7 +189,7 @@
     font-size: 1.2rem;
   }
   .titleText {
-    width: 85%;
+    width: 60%;
     transform: translate(10%, -150%);
     padding: 5px;
   }

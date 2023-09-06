@@ -24,6 +24,11 @@ const ItemGrid = (props) => {
                   <b>{item.title}</b>
                 </p>
                 <p>{item.text}</p>
+                {item.link ? (
+                  <a href={item.link}>
+                    <button>{item.button}</button>
+                  </a>
+                ) : null}
               </div>
             </Col>
           ))}

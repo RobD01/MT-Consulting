@@ -2,8 +2,7 @@ import ReactPaginate from "react-paginate";
 import CommunityGrid from "../components/CommunityGrid";
 import { useState } from "react";
 
-function PaginatedItems({ itemsPerPage, filter }) {
-  let items = filter;
+function PaginatedItems({ itemsPerPage, items }) {
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);

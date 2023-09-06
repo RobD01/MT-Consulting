@@ -10,6 +10,10 @@ import InfoToggle from "../components/InfoToggle";
 const Appointment = () => {
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // No real effect with data. It's just a 2 second loading icon
   useEffect(() => {
     setIsLoading(true);
