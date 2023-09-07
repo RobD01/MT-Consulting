@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
 
 const Learn = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container text-center">
       <h2 className="text-center">Learn</h2>

@@ -21,9 +21,9 @@ const Home = () => {
 
       {/* Address, Phone */}
 
-      <Container fluid="md mt-5">
+      <Container fluid="md">
         <Row>
-          <Col s={12} m={6} lg={4}>
+          <Col s={12} m={6} lg={4} className="mt-2">
             <div className="address">
               <p>Serving all of Orange County, CA (in-person and online).</p>
               <p>Available in all other areas (via online meetings)</p>
@@ -40,7 +40,7 @@ const Home = () => {
               </a>
             </div>
           </Col>
-          <Col s={12} m={6} lg={8}>
+          <Col s={12} m={6} lg={8} className="mt-2">
             <iframe
               title="Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42445.56402102732!2d-117.9746008949834!3d33.7262157342606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd270b73476835%3A0x464c4b5cfd95a7eb!2sMile%20Square%20Regional%20Park!5e0!3m2!1sen!2sus!4v1690610750560!5m2!1sen!2sus"

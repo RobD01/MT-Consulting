@@ -15,14 +15,14 @@ const CommunityPost = ({ data }) => {
 
   const item = data.find((x) => x.id == id);
 
-  const { Timestamp, Name, Title, Tags, Message } = item;
+  const { Date, Name, Title, Tags, Message } = item;
 
   return (
     <div className="container text-center">
       <h2 className="text-center">CommunityPost</h2>
       <div className="message-grid">
         <div className="message-header">
-          <p className="message-date">{Timestamp}</p>
+          <p className="message-date">{Date}</p>
           <p className="message-name">Name: {Name}</p>
           <p className="message-tag"># {Tags}</p>
         </div>
