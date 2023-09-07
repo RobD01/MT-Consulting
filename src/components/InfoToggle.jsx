@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "react-bootstrap";
 import Collapse from "react-bootstrap/Collapse";
+import "../style/main.css";
 
 const InfoToggle = (props) => {
   const [open, setOpen] = useState(false);
@@ -14,14 +14,14 @@ const InfoToggle = (props) => {
     <>
       {/* Toggle Button */}
       <div className="text-center m-4">
-        <Button
+        <button
           onClick={handleToggle}
           aria-controls="example-collapse-text"
           aria-expanded={open}
-          variant="warning"
+          className="button-dark"
         >
           {buttonLabel}
-        </Button>
+        </button>
       </div>
 
       {/* Info Box */}
