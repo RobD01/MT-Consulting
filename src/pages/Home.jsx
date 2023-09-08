@@ -8,7 +8,7 @@ import { coach, business, realEstate } from "../services/Home";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div>
       {/* Title */}
 
       <div className="titleImage"></div>

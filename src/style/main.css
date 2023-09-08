@@ -83,7 +83,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(4px);
+  filter: blur(3px);
   background-image: var(--titleImageUrl);
 }
 
@@ -184,14 +184,18 @@
 
 /* Phone */
 @media (max-width: 770px) {
+  .container {
+    width: 100vw;
+  }
+
   .titleHeading {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .titleSubHeading {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .titleText {
-    width: 60%;
+    width: 70%;
     padding: 5px;
   }
 
