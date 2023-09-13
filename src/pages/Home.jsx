@@ -34,7 +34,7 @@ const Home = () => {
                 <b>Hours:</b> Mon - Fri: 10am - 6pm{" "}
               </p>
 
-              <a href="/MT-Consulting/#/appointment">
+              <a href="/#/appointment">
                 {" "}
                 <button>Schedule an Appointment</button>
               </a>
