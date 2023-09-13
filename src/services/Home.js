@@ -31,7 +31,7 @@ export const coach = [
     text: `We provide complimentary finance and 
     business lectures on the Youtube channel and
     Patreon.`,
-    link: "/MT-Consulting/#/learn",
+    link: "/#/learn",
     button: "Learning Portal",
   },
   {
