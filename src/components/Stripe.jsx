@@ -10,7 +10,7 @@ const Stripe = (props) => {
   return (
     <>
       <Container fluid="md" className="mt-4 mb-5">
-        <h4>{props.title}</h4>
+        <h5>{props.title}</h5>
         <Row>
           {props.image ? (
             <>

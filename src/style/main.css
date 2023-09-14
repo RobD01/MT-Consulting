@@ -48,7 +48,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 60%;
+  padding: 1rem;
+  max-width: fit-content;
   text-align: center;
   font-family: Bebas Neue;
 }
@@ -169,9 +170,6 @@
   .titleSubHeading {
     font-size: 1.2rem;
   }
-  .titleText {
-    width: 50%;
-  }
 
   .titleImage {
     height: 200px;
@@ -195,7 +193,6 @@
     font-size: 1.1rem;
   }
   .titleText {
-    width: 70%;
     padding: 5px;
   }
 

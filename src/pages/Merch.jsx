@@ -16,6 +16,17 @@ const Merch = () => {
         description="Designed and printed by Ravenous Couple. Through their love of cooking and culture, they designed the
               names of Vietnamese foods into the shape of Vietnam"
       />
+      <Stripe
+        title="ABC to Vietnamese: Alphabet Series"
+        stripe="https://www.amazon.com/ABC-Vietnamese-Alphabet-Robert-Dao/dp/B08PJKJBS5"
+        description="This is the perfect gift for children and 
+        even adults who are new to Vietnamsese. It teaches the 
+        rules of the language and how it differs from English. 
+        Every letter comes with an example word and sentence to 
+        provide a full experience on how to apply the lessons 
+        into everyday life."
+        image="https://m.media-amazon.com/images/I/61Gb18UB7iL._SL1500_.jpg"
+      />
     </div>
   );
 };

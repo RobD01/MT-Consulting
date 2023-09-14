@@ -42,9 +42,10 @@ const Appointment = () => {
   const payment = (
     <div className="mt-5">
       <Stripe
-        title="Appointment Payment"
+        title="Step 2: Appointment Payment"
         stripe="https://buy.stripe.com/6oEbIXeY04wp0c87st"
         description={description}
+        image="https://images.pexels.com/photos/261599/pexels-photo-261599.jpeg?auto=compress&cs=tinysrgb&w=1600"
       />
     </div>
   );
@@ -60,6 +61,7 @@ const Appointment = () => {
         See payment section at the bottom.
       </p>
 
+      <h5>Step 1 : Schedule Appointment</h5>
       <InfoToggle section="Calendar" content={calendar} />
       {payment}
     </div>
