@@ -84,7 +84,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(3px);
+  /* filter: blur(3px); */
   background-image: var(--titleImageUrl);
 }
 

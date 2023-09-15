@@ -19,8 +19,8 @@ const Merch = () => {
       <Stripe
         title="ABC to Vietnamese: Alphabet Series"
         stripe="https://www.amazon.com/ABC-Vietnamese-Alphabet-Robert-Dao/dp/B08PJKJBS5"
-        description="This is the perfect gift for children and 
-        even adults who are new to Vietnamsese. It teaches the 
+        description="This book is the perfect gift for anyone new to 
+        Vietnamsese. It teaches the 
         rules of the language and how it differs from English. 
         Every letter comes with an example word and sentence to 
         provide a full experience on how to apply the lessons 
