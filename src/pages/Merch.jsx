@@ -3,6 +3,7 @@ import "../style/font.css";
 import "../style/main.css";
 import Stripe from "../components/Stripe";
 import poster from "../image/Poster.jpg";
+import stick from "../image/Mt-Fuji-Stick.jpg";
 
 const Merch = () => {
   return (
@@ -26,6 +27,15 @@ const Merch = () => {
         provide a full experience on how to apply the lessons 
         into everyday life."
         image="https://m.media-amazon.com/images/I/61Gb18UB7iL._SL1500_.jpg"
+      />
+      <Stripe
+        title="Mt Fuji Walking Stick"
+        stripe="https://buy.stripe.com/aEU8wL2be2oh2kg002"
+        description="This staff with stamps serve as undeniable proof of your triumphant 
+        climb. At the summit, the clouds swirl beneath you and breathtaking views 
+        of the sunrise before your eyes. This walking stick becomes your talisman—
+        a tangible reminder of conquering one of nature's magnificent wonders. "
+        image={stick}
       />
     </div>
   );
