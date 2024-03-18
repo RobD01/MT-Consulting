@@ -51,16 +51,16 @@
   padding: 1rem;
   max-width: fit-content;
   text-align: center;
-  font-family: Bebas Neue;
 }
 
 .titleHeading {
   font-size: 3rem;
+  font-family: Tangerine;
 }
 
 .titleSubHeading {
   font-size: 1.75rem;
-  font-family: "Red Hat Display";
+  /* font-family: "Red Hat Display"; */
 }
 
 .flexItem {
