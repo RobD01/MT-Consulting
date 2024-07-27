@@ -12,12 +12,9 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/#/">Home</Nav.Link>
-              <Nav.Link href="/#/appointment">
-                Appointment
-              </Nav.Link>
+              <Nav.Link href="/#/appointment">Appointment</Nav.Link>
               <Nav.Link href="/#/message">Message</Nav.Link>
-              <Nav.Link href="/#/community">Community</Nav.Link>
-              <Nav.Link href="/#/learn">Learn</Nav.Link>
+              <Nav.Link href="/#/sponsor">Sponsors</Nav.Link>
               <Nav.Link href="/#/merch">Merch</Nav.Link>
             </Nav>
           </Navbar.Collapse>
