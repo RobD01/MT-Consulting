@@ -23,7 +23,7 @@ const Sponsor = () => {
               >
                 <Button className="shad-button_primary px-10">Buy</Button>
               </Link>
-              <p className="text-rose-700 text-sm">
+              <p className="text-emerald-600 text-sm">
                 Buy button will open a new window to the stripe platform
               </p>
               <p>

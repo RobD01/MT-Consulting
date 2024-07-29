@@ -28,13 +28,13 @@ const HomeCard = ({ post }: HomeCardProps) => {
       {post.name ? (
         <div className=" p-3 text-center">
           <div className="mb-3">
-            <p className="text-center text-xl">{business.detail}</p>
+            <p className="text-center">{business.detail}</p>
           </div>
         </div>
       ) : null}
       {post.address ? (
         <>
-          <p className="text-center text-xl">{post?.address}</p>
+          <p className="text-center">{post?.address}</p>
           {map}
         </>
       ) : null}

@@ -29,8 +29,8 @@ export const business = {
 export const homeLinks = [
   {
     imgURL: "/assets/images/meeting.jpg",
-    route: "/appointment",
-    label: "Schedule Appointment",
+    route: "/product",
+    label: "Products & Services",
   },
   {
     imgURL: "/assets/images/sponsor.jpg",
@@ -68,13 +68,6 @@ export const sponsor = [
   },
   {
     id: 3,
-    imageUrl: "/assets/images/abc.png",
-    url: "https://www.amazon.com/dp/B08P9LD9L7?binding=paperback",
-    title: "ABC to Vietnamese",
-    description: "Children's book series to teach Vietnamese",
-  },
-  {
-    id: 4,
     imageUrl: "/assets/images/youtube.png",
     url: "https://www.youtube.com/@moneytheory",
     title: "Money Theory Youtube",
