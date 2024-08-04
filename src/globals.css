@@ -372,3 +372,8 @@
 .title {
   @apply text-xl text-emerald-800;
 }
+
+/* Resume Card */
+.resume-card {
+  @apply border border-amber-300 rounded-xl shadow-md py-3 lg:p-1 md:w-1/3;
+}

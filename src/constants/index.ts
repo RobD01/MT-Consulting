@@ -92,3 +92,58 @@ export const product = [
       "Volatility and correlation data for all 500 stocks in the S&P 500",
   },
 ];
+
+export const resumeSummary = [
+  {
+    id: 1,
+    name: "Business Management (8 years)",
+    detail: [
+      "Product management",
+      "Project management",
+      "Business analyst",
+      "PMP in progress",
+    ],
+  },
+  {
+    id: 2,
+    name: "Software Development (4 years)",
+    detail: [
+      "Python: Pandas Numpy Pytorch",
+      "Javascript: React JS Next JS",
+      "Database: Appwrite, SQL",
+    ],
+  },
+];
+
+export const resumeSoftware = [
+  {
+    id: 1,
+    name: "Ngonapp",
+    detail: [
+      "Social media application to share photos of food and discover restaurants",
+      "Tanstack Query for API data fetching and queries",
+      "User authentication, relational database, infinite scroll",
+    ],
+    link: "http://ngonapp.com",
+  },
+  {
+    id: 2,
+    name: "Machine Learning & Neural Networks",
+    detail: [
+      "Develop & train models to make classifications and predictions",
+      "Linear models, binary and multiclass classification, computer vision",
+      "Determine the activation function, loss functions, and optimizers",
+    ],
+    link: "https://drive.google.com/drive/folders/18LZ0Y6KZRWOuVJgnmRl34JZW31yQK6Fb?usp=drive_link",
+  },
+  {
+    id: 2,
+    name: "Money Theory",
+    detail: [
+      "Business and financial consulting services website",
+      "Appointment scheduling and payment processing widget",
+      "Implemented interactive chat forum with api and database",
+    ],
+    link: "http://moneytheory.net",
+  },
+];
