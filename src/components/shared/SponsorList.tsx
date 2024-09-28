@@ -28,18 +28,29 @@ const SponsorList = ({ list }: SponsorListProps) => {
           <div className="flex flex-col gap-2">
             <span className="font-semibold">{item?.title}</span>
 
-            <Link
-              to={item?.url || ""}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="text-slate-800 pl-2 pb-2">{item?.description}</p>
-              <img
-                src={item?.imageUrl}
-                alt="image"
-                className=" object-cover rounded-[10px] w-1/4 pl-2"
-              />
-            </Link>
+            {item.url ? (
+              <Link
+                to={item?.url || ""}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="text-slate-800 pl-2 pb-2">{item?.description}</p>
+                <img
+                  src={item?.imageUrl}
+                  alt="image"
+                  className=" object-cover rounded-[10px] w-1/3 md:w-1/6 pl-2"
+                />
+              </Link>
+            ) : (
+              <>
+                <p className="text-slate-800 pl-2 pb-2">{item?.description}</p>
+                <img
+                  src={item?.imageUrl}
+                  alt="image"
+                  className=" object-cover rounded-[10px] w-1/3 md:w-1/6  pl-2"
+                />
+              </>
+            )}
           </div>
         </li>
       ))}

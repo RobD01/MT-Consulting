@@ -92,6 +92,24 @@ export const product = [
       "Volatility and correlation data for all 500 stocks in the S&P 500",
   },
 ];
+export const service = [
+  {
+    id: 1,
+    imageUrl:
+      "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Business consulting",
+    description:
+      "Identify business and marketing opportunities, and provide efficient management strategies with cost-effective tools and apps. Develop websites or social media business profiles. Manage the development of products and services",
+  },
+  {
+    id: 2,
+    imageUrl:
+      "https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Financial coaching",
+    description:
+      "Develop financial strategies that address budgeting, saving, investing, and debt management. Through education and practical tools, you can make informed decisions and achieve your financial goals.",
+  },
+];
 
 export const resumeSummary = [
   {
