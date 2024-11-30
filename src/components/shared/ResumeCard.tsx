@@ -16,7 +16,9 @@ const ResumeCard = ({ post }: ResumeCardProps) => {
         <p className="text-center font-semibold">{post.name}</p>
         {post.link ? (
           <Link to={post.link} target="_blank">
-            <button className="px-10 bg-amber-100">View Product</button>
+            <button className="px-5 bg-amber-200 rounded-md py-1 hover:shadow-md">
+              View Product
+            </button>
           </Link>
         ) : null}
         <ul>
