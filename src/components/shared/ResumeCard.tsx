@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
 
 type ResumeCardProps = {
   post: {
@@ -17,7 +16,7 @@ const ResumeCard = ({ post }: ResumeCardProps) => {
         <p className="text-center font-semibold">{post.name}</p>
         {post.link ? (
           <Link to={post.link} target="_blank">
-            <Button className="px-10 bg-amber-100">View Product</Button>
+            <button className="px-10 bg-amber-100">View Product</button>
           </Link>
         ) : null}
         <ul>

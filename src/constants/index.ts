@@ -14,6 +14,11 @@ export const sidebarLinks = [
     route: "/sponsor",
     label: "Sponsor",
   },
+  {
+    imgURL: "/assets/icons/calendar.svg",
+    route: "/appointment",
+    label: "Appointment",
+  },
 ];
 
 export const bottombarLinks = sidebarLinks;

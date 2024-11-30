@@ -1,5 +1,5 @@
 import SponsorList from "@/components/shared/SponsorList";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { sponsor } from "@/constants";
 import { Link } from "react-router-dom";
 
@@ -16,12 +16,12 @@ const Sponsor = () => {
               <h1 className="title">Become a sponsor</h1>
 
               <Link
-                to="https://buy.stripe.com/bIY28n7vy1kd9MIfZ1"
+                to="https://buy.stripe.com/fZe8wL7vy0g9bUQ5ko"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center"
               >
-                <Button className="shad-button_primary px-10">Buy</Button>
+                <button className="shad-button_primary px-10">Buy</button>
               </Link>
               <p className="text-emerald-600 text-sm">
                 Buy button will open a new window to the stripe platform
