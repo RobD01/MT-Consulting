@@ -6,26 +6,24 @@ const Home = () => {
   return (
     <div className="flex flex-1">
       <div className="home-container">
-        <div className="home-posts">
-          <h2 className="h3-bold md:h2-bold text-left w-full px-5">
-            {business.name}
-          </h2>
+        <h2 className="h3-bold md:h2-bold text-left w-full px-5">
+          {business.name}
+        </h2>
 
-          {/* home info */}
-          <ul className=" grid grid-cols-1  gap-7  sm:w-full">
-            {homeInfo?.map((post) => (
-              // @ts-expect-error homeInfo
-              <HomeCard post={post} key={post.id} />
-            ))}
-          </ul>
+        {/* home info */}
+        <ul className=" grid grid-cols-1  gap-7  sm:w-full">
+          {homeInfo?.map((post) => (
+            // @ts-expect-error homeInfo
+            <HomeCard post={post} key={post.id} />
+          ))}
+        </ul>
 
-          {/* home links */}
-          <ul className=" grid grid-cols-1 sm:grid-cols-2 gap-7  sm:w-full">
-            {homeLinks?.map((post) => (
-              <PostCard post={post} key={post.label} />
-            ))}
-          </ul>
-        </div>
+        {/* home links */}
+        <ul className=" grid grid-cols-1 sm:grid-cols-2 gap-7  sm:w-full">
+          {homeLinks?.map((post) => (
+            <PostCard post={post} key={post.label} />
+          ))}
+        </ul>
       </div>
     </div>
   );

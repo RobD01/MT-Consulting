@@ -6,7 +6,7 @@ const Product = () => {
   return (
     <div className="flex flex-1">
       <div className="home-container ">
-        <div className="p-1 flex flex-col flex-1 gap-5">
+        <div className="p-1 flex flex-col flex-1 gap-10">
           <div>
             <h2 className="h3-bold md:h2-bold text-left w-full px-5">
               Products
