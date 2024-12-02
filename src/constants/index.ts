@@ -96,32 +96,39 @@ export const product = [
     description:
       "Volatility and correlation data for all 500 stocks in the S&P 500",
   },
+];
+
+export const rental = [
   {
-    id: 3,
+    id: 1,
     imageUrl:
       "https://target.scene7.com/is/image/Target/GUEST_23dc61be-d199-461d-81e3-36c010e7f745",
     url: "",
-    title: "Drone DJI Mavic Mini 2 : 1 Week Rental",
+    title: "Drone DJI Mavic Mini 2",
     description:
-      "Aerial photography and video. Ideal for real estate listings, outdoor adventures, or weddings. 4K Video & 3-Axis Gimbal for Cinematic Quality Shooting. Accessories: Carrying bag, charging cable, memory card. Shipping not available. In-person delivery to Orange County only. $400 security deposit in the form of authorization charge. Upon equipment return, the deposit will be refunded.",
+      "Aerial photography and video. Ideal for real estate listings, outdoor adventures, or weddings. 4K Video & 3-Axis Gimbal for Cinematic Quality Shooting. Accessories: Carrying bag, charging cable, memory card",
+    deposit: "400.00",
   },
   {
-    id: 4,
+    id: 2,
     imageUrl: "https://m.media-amazon.com/images/I/61kHENeCK8L._AC_SL1000_.jpg",
     url: "",
-    title: "Sony Alpha a6000 Mirrorless Digital Camera : 1 Week Rental",
+    title: "Sony Alpha a6000 Mirrorless Digital Camera",
     description:
-      "Includes both f2.8 35mm lens for portraits and f3.5 16-50mm lens for street photography. Accessories: Carrying bag, charging cable, memory card. Shipping not available. In-person delivery to Orange County only. $800 security deposit in the form of authorization charge. Upon equipment return, the deposit will be refunded.",
+      "Includes both f2.8 35mm lens for portraits and f3.5 16-50mm lens for street photography. Accessories: Carrying bag, charging cable, memory card",
+    deposit: "800.00",
   },
   {
-    id: 5,
+    id: 3,
     imageUrl: "https://m.media-amazon.com/images/I/61UCYP4v-sL._AC_SL1500_.jpg",
     url: "",
-    title: "Neewer Softbox Lighting Kit (quantity 2): 1 Week Rental",
+    title: "Neewer Softbox Lighting Kit (quantity 2)",
     description:
-      "Diffuses light to give continuous soft lighting. Ideal for portraits, youtube, or products. Shipping not available. In-person delivery to Orange County only. $80 security deposit in the form of authorization charge. Upon equipment return, the deposit will be refunded.",
+      "Diffuses light to give continuous soft lighting. Ideal for portraits, youtube, or products",
+    deposit: "80.00",
   },
 ];
+
 export const service = [
   {
     id: 1,

@@ -1,5 +1,6 @@
+import RentalList from "@/components/shared/RentalList";
 import SponsorList from "@/components/shared/SponsorList";
-import { product } from "@/constants";
+import { product, rental } from "@/constants";
 import { service } from "@/constants";
 
 const Product = () => {
@@ -14,6 +15,21 @@ const Product = () => {
             {
               // @ts-expect-error object type
               <SponsorList list={product} />
+            }
+          </div>
+          <div>
+            <h2 className="h3-bold md:h2-bold text-left w-full px-5">
+              Equipment Rental
+            </h2>
+            <p className="text-slate-800 pb-8">
+              Terms: 1 week rentals. Shipping not available. In-person delivery
+              to Orange County only. Security deposit in the form of
+              authorization charge required. Upon equipment return, the deposit
+              will be refunded.
+            </p>
+            {
+              // @ts-expect-error object type
+              <RentalList list={rental} />
             }
           </div>
           <div>
